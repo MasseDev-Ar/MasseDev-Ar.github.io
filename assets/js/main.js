@@ -1,0 +1,1 @@
+console.log("MasseDev website loaded");
