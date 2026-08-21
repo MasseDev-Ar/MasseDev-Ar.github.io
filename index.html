@@ -1,42 +1,221 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>MasseDev | Desarrollo web y soluciones digitales</title>
 
     <meta
-        name="description"
-        content="MasseDev desarrolla sitios web y soluciones digitales modernas, rápidas y adaptadas a las necesidades de cada proyecto."
-    >
+      name="description"
+      content="MasseDev desarrolla sitios web y soluciones digitales modernas, rápidas y adaptadas a las necesidades de cada proyecto."
+    />
 
-    <link rel="stylesheet" href="./assets/css/main.css">
-</head>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
 
-<body>
-    <main>
-        <section class="section">
-            <div class="container">
-    
-                <h1>
-                    Desarrollo web con
-                    <span class="text-gradient">
-                        código de altura.
-                    </span>
-                </h1>
-    
-                <p>
-                    Creamos soluciones digitales modernas,
-                    rápidas y pensadas para crecer.
-                </p>
-    
+  <body>
+    <a class="skip-link" href="#main-content">
+      Saltar al contenido principal
+    </a>
+
+    <header class="site-header">
+      <div class="container header-container">
+        <a class="brand" href="/" aria-label="MasseDev - Inicio">
+          <img
+            src="./assets/img/logo/massedev-logo.png"
+            alt="MasseDev - Código de altura"
+            width="220"
+            height="72"
+          />
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Abrir menú de navegación"
+          aria-expanded="false"
+          aria-controls="main-navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav
+          id="main-navigation"
+          class="main-nav"
+          aria-label="Navegación principal"
+        >
+          <a href="#inicio">Inicio</a>
+          <a href="#servicios">Servicios</a>
+          <a href="#proyectos">Proyectos</a>
+          <a href="#nosotros">Nosotros</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contacto">Contacto</a>
+
+          <a class="btn btn-primary nav-cta" href="./presupuesto/">
+            Solicitar presupuesto
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section id="inicio" class="hero">
+        <div class="container hero-container">
+          <div class="hero-content">
+            <p class="hero-eyebrow">Desarrollo web y soluciones digitales</p>
+
+            <h1 class="hero-title">
+              Desarrollo web con
+              <span class="text-gradient"> código de altura. </span>
+            </h1>
+
+            <p class="hero-description">
+              Creamos sitios web modernos, rápidos y escalables que impulsan tu
+              negocio y generan resultados.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="./presupuesto/">
+                Solicitar presupuesto
+              </a>
+
+              <a class="btn btn-secondary" href="#proyectos"> Ver proyectos </a>
             </div>
-        </section>
+
+            <p class="hero-response">
+              <span class="hero-response-icon" aria-hidden="true"> ◷ </span>
+
+              Te respondemos en menos de
+              <strong>24 horas hábiles</strong>
+            </p>
+          </div>
+
+          <div class="hero-visual" aria-hidden="true">
+            <div class="hero-logo-mark">M</div>
+
+            <span class="pixel pixel-1"></span>
+            <span class="pixel pixel-2"></span>
+            <span class="pixel pixel-3"></span>
+            <span class="pixel pixel-4"></span>
+          </div>
+        </div>
+      </section>
+
+      <section id="servicios" class="services section">
+        <div class="container">
+          <header class="section-header">
+            <p class="section-eyebrow">Servicios</p>
+
+            <h2 class="section-title">
+              Soluciones digitales para
+              <span class="text-gradient"> cada etapa. </span>
+            </h2>
+
+            <p class="section-description">
+              Diseñamos y desarrollamos soluciones digitales adaptadas a las
+              necesidades reales de cada proyecto.
+            </p>
+          </header>
+
+          <div class="services-grid">
+            <article class="service-card">
+              <div class="service-icon" aria-hidden="true">01</div>
+
+              <h3>Sitios web</h3>
+
+              <p>
+                Sitios institucionales modernos, rápidos y adaptados a todos los
+                dispositivos para presentar tu negocio de forma profesional.
+              </p>
+
+              <a href="./servicios/">
+                Conocer más
+                <span aria-hidden="true">→</span>
+              </a>
+            </article>
+
+            <article class="service-card">
+              <div class="service-icon" aria-hidden="true">02</div>
+
+              <h3>Landing pages</h3>
+
+              <p>
+                Páginas enfocadas en presentar un producto, servicio o campaña y
+                convertir visitantes en potenciales clientes.
+              </p>
+
+              <a href="./servicios/">
+                Conocer más
+                <span aria-hidden="true">→</span>
+              </a>
+            </article>
+
+            <article class="service-card">
+              <div class="service-icon" aria-hidden="true">03</div>
+
+              <h3>Sistemas web</h3>
+
+              <p>
+                Aplicaciones y herramientas digitales desarrolladas para
+                resolver procesos y necesidades específicas de tu negocio.
+              </p>
+
+              <a href="./servicios/">
+                Conocer más
+                <span aria-hidden="true">→</span>
+              </a>
+            </article>
+
+            <article class="service-card">
+              <div class="service-icon" aria-hidden="true">04</div>
+
+              <h3>Mantenimiento y mejoras</h3>
+
+              <p>
+                Actualización, optimización y evolución de sitios existentes
+                para mantenerlos rápidos, seguros y actualizados.
+              </p>
+
+              <a href="./servicios/">
+                Conocer más
+                <span aria-hidden="true">→</span>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="proyectos" class="section">
+        <div class="container">
+          <h2>Proyectos</h2>
+        </div>
+      </section>
+
+      <section id="nosotros" class="section">
+        <div class="container">
+          <h2>Nosotros</h2>
+        </div>
+      </section>
+
+      <section id="faq" class="section">
+        <div class="container">
+          <h2>Preguntas frecuentes</h2>
+        </div>
+      </section>
+
+      <section id="contacto" class="section">
+        <div class="container">
+          <h2>Contacto</h2>
+        </div>
+      </section>
     </main>
-</body>
+
+    <a class="mobile-cta" href="./presupuesto/"> Solicitar presupuesto </a>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
 </html>
