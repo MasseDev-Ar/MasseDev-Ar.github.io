@@ -1281,3 +1281,139 @@ p {
 .project-links {
     margin-top: auto;
 }
+/* ==================================================
+   25. About
+   ================================================== */
+
+   .about {
+    background-color: var(--color-surface);
+}
+
+.about-container {
+    display: grid;
+
+    gap: var(--space-7);
+}
+
+.about-content {
+    max-width: 680px;
+}
+
+.about-lead {
+    color: var(--color-dark);
+
+    font-size: var(--text-lg);
+    font-weight: 600;
+}
+
+.about-content > p:not(
+    .section-eyebrow,
+    .about-lead
+) {
+    color: var(--color-text-muted);
+}
+
+
+/* Values */
+
+.about-values {
+    display: grid;
+
+    gap: var(--space-4);
+
+    margin-top: var(--space-6);
+    padding-top: var(--space-6);
+
+    border-top: 1px solid var(--color-border);
+}
+
+.about-value {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--space-1);
+}
+
+.about-value strong {
+    color: var(--color-dark);
+}
+
+.about-value span {
+    color: var(--color-text-muted);
+
+    font-size: var(--text-sm);
+}
+
+
+/* ==================================================
+   26. Team
+   ================================================== */
+
+.about-team {
+    width: 100%;
+}
+
+.team-photo {
+    margin: 0;
+
+    overflow: hidden;
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+
+    background-color: var(--color-background);
+}
+
+.team-photo img {
+    width: 100%;
+
+    aspect-ratio: 4 / 5;
+
+    object-fit: cover;
+}
+
+.team-photo figcaption {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--space-1);
+
+    padding: var(--space-4);
+}
+
+.team-photo figcaption strong {
+    color: var(--color-dark);
+}
+
+.team-photo figcaption span {
+    color: var(--color-text-muted);
+
+    font-size: var(--text-sm);
+}
+/* ==================================================
+   27. About Responsive
+   ================================================== */
+
+   @media (min-width: 650px) {
+
+    .about-values {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+@media (min-width: 900px) {
+
+    .about-container {
+        grid-template-columns:
+            minmax(0, 1.15fr)
+            minmax(300px, 0.65fr);
+
+        align-items: center;
+
+        gap: var(--space-9);
+    }
+
+}
