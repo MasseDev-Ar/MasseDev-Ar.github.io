@@ -965,3 +965,128 @@ p {
     }
 
 }
+
+/* ==================================================
+   21. Process
+   ================================================== */
+
+   .process {
+    background-color: var(--color-surface);
+}
+
+.process-grid {
+    display: grid;
+
+    gap: var(--space-4);
+}
+
+.process-step {
+    position: relative;
+
+    padding:
+        var(--space-5)
+        0
+        var(--space-5)
+        var(--space-6);
+
+    border-left: 1px solid var(--color-border);
+}
+
+.process-step::before {
+    content: "";
+
+    position: absolute;
+
+    top: var(--space-6);
+    left: -5px;
+
+    width: 9px;
+    height: 9px;
+
+    border-radius: 50%;
+
+    background-color: var(--color-primary);
+}
+
+.process-number {
+    display: block;
+
+    margin-bottom: var(--space-3);
+
+    color: var(--color-primary);
+
+    font-size: var(--text-sm);
+    font-weight: 700;
+
+    letter-spacing: 0.08em;
+}
+
+.process-step h3 {
+    margin-bottom: var(--space-3);
+
+    font-size: var(--text-xl);
+}
+
+.process-step p {
+    margin: 0;
+
+    color: var(--color-text-muted);
+}
+/* ==================================================
+   22. Process Responsive
+   ================================================== */
+
+   @media (min-width: 900px) {
+
+    .process-grid {
+        grid-template-columns:
+            repeat(5, minmax(0, 1fr));
+
+        gap: 0;
+    }
+
+    .process-step {
+        padding:
+            var(--space-6)
+            var(--space-5);
+
+        border-left: 0;
+        border-top: 1px solid var(--color-border);
+    }
+
+    .process-step::before {
+        top: -5px;
+        left: var(--space-5);
+    }
+}
+.process-cta {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: var(--space-4);
+
+    margin-top: var(--space-7);
+    padding-top: var(--space-6);
+
+    border-top: 1px solid var(--color-border);
+}
+
+.process-cta p {
+    margin: 0;
+
+    color: var(--color-dark);
+
+    font-size: var(--text-xl);
+    font-weight: 700;
+}
+
+@media (min-width: 700px) {
+
+    .process-cta {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
