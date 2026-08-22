@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 941" role="img" aria-labelledby="title desc">
+<title id="title">Isotipo MasseDev</title>
+<desc id="desc">Símbolo geométrico M de MasseDev en violeta, azul y celeste.</desc>
+<defs>
+  <linearGradient id="brandGradient" x1="0%" y1="20%" x2="100%" y2="80%">
+    <stop offset="0%" stop-color="#7a00ff"/>
+    <stop offset="48%" stop-color="#4b22e8"/>
+    <stop offset="100%" stop-color="#08bff0"/>
+  </linearGradient>
+</defs>
+<g fill="url(#brandGradient)">
+  <path d="M 124,376 L 119,381 L 120,781 L 334,940 L 339,934 L 337,561 L 140,383 Z"/>  <path d="M 1046,364 L 827,558 L 822,875 L 827,937 L 1048,775 Z"/>  <path d="M 1049,305 L 934,202 L 918,201 L 588,493 L 282,218 L 181,218 L 178,273 L 122,274 L 125,330 L 580,744 Z"/>  <path d="M 99,194 L 99,251 L 154,251 L 154,194 Z"/>  <path d="M 330,165 L 330,243 L 410,243 L 410,164 Z"/>  <path d="M 216,133 L 216,180 L 262,180 L 262,133 Z"/>  <path d="M 0,118 L 0,203 L 84,203 L 84,118 Z"/>  <path d="M 135,59 L 134,60 L 134,126 L 140,127 L 200,126 L 200,59 Z"/>  <path d="M 262,11 L 262,102 L 352,102 L 352,11 Z"/>  <path d="M 45,0 L 45,59 L 103,59 L 103,0 Z"/>
+</g>
+</svg>
