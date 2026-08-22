@@ -40,6 +40,14 @@
       property="og:title"
       content="MasseDev | Desarrollo web y soluciones digitales"
     />
+    <meta
+      property="og:image:alt"
+      content="MasseDev - Desarrollo web y soluciones digitales"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="MasseDev - Desarrollo web y soluciones digitales"
+    />
 
     <meta
       property="og:description"
@@ -117,7 +125,7 @@
 
     <header class="site-header">
       <div class="container header-container">
-        <a class="brand" href="/" aria-label="MasseDev - Inicio">
+        <a class="brand" href="./" aria-label="MasseDev - Inicio">
           <img
             src="./assets/img/logo/massedev-logo.png"
             alt="MasseDev - Código de altura"
@@ -143,7 +151,7 @@
           class="main-nav"
           aria-label="Navegación principal"
         >
-          <a href="#inicio">Inicio</a>
+          <a href="#inicio" aria-current="page">Inicio</a>
           <a href="#servicios">Servicios</a>
           <a href="#proyectos">Proyectos</a>
           <a href="#nosotros">Nosotros</a>
@@ -356,12 +364,14 @@
             </article>
           </div>
         </div>
-      </section>
-      <div class="process-cta">
-        <p>¿Tenés un proyecto en mente?</p>
+        <div class="process-cta">
+          <p>¿Tenés un proyecto en mente?</p>
 
-        <a class="btn btn-primary" href="./presupuesto/"> Contanos tu idea </a>
-      </div>
+          <a class="btn btn-primary" href="./presupuesto/">
+            Contanos tu idea
+          </a>
+        </div>
+      </section>
 
       <section id="proyectos" class="projects section">
         <div class="container">
@@ -441,7 +451,7 @@
               <div class="project-image">
                 <img
                   src="./assets/img/projects/smartstock.png"
-                  alt="Vista previa del sistema de gestión de inventario SmartStock"
+                  alt="Ilustración conceptual del sistema de gestión de inventario SmartStock"
                   width="1200"
                   height="750"
                   loading="lazy"
@@ -486,7 +496,7 @@
               <div class="project-image">
                 <img
                   src="./assets/img/projects/apocalypsheep.png"
-                  alt="Vista previa del videojuego mobile Apocalypsheep"
+                  alt="Ilustración conceptual del videojuego mobile Apocalypsheep"
                   width="1200"
                   height="750"
                   loading="lazy"
@@ -549,9 +559,9 @@
             </h2>
 
             <p class="about-lead">
-              MasseDev es un estudio de desarrollo de software enfocado en crear
-              soluciones digitales modernas, funcionales y adaptadas a cada
-              proyecto.
+              MasseDev es un estudio independiente de desarrollo de software
+              enfocado en crear soluciones digitales modernas, funcionales y
+              adaptadas a cada proyecto.
             </p>
 
             <p>
@@ -818,6 +828,11 @@
               <p class="form-note">
                 Al enviar, se abrirá WhatsApp con tu consulta preparada.
               </p>
+              <p class="form-note">
+                Al continuar, aceptás el tratamiento de los datos enviados según
+                nuestra
+                <a href="./privacidad/">Política de privacidad</a>.
+              </p>
             </div>
           </form>
         </div>
@@ -839,7 +854,7 @@
     <footer class="site-footer">
       <div class="container footer-grid">
         <div class="footer-brand">
-          <a class="footer-logo" href="/" aria-label="MasseDev - Inicio">
+          <a class="footer-logo" href="./" aria-label="MasseDev - Inicio">
             <img
               src="./assets/img/logo/massedev-logo.png"
               alt="MasseDev - Código de altura"

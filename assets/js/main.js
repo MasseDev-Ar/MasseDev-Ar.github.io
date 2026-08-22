@@ -1,11 +1,34 @@
 const menuToggle = document.querySelector(".menu-toggle");
 const mainNavigation = document.querySelector(".main-nav");
 
+
+function closeMenu() {
+
+    if (!menuToggle || !mainNavigation) {
+        return;
+    }
+
+    mainNavigation.classList.remove("is-open");
+
+    menuToggle.setAttribute(
+        "aria-expanded",
+        "false"
+    );
+
+    menuToggle.setAttribute(
+        "aria-label",
+        "Abrir menú de navegación"
+    );
+
+}
+
+
 if (menuToggle && mainNavigation) {
 
     menuToggle.addEventListener("click", () => {
 
-        const isOpen = mainNavigation.classList.toggle("is-open");
+        const isOpen =
+            mainNavigation.classList.toggle("is-open");
 
         menuToggle.setAttribute(
             "aria-expanded",
@@ -21,27 +44,43 @@ if (menuToggle && mainNavigation) {
 
     });
 
+
     mainNavigation.addEventListener("click", (event) => {
 
-        if (event.target.matches("a")) {
+        if (event.target.closest("a")) {
+            closeMenu();
+        }
 
-            mainNavigation.classList.remove("is-open");
+    });
 
-            menuToggle.setAttribute(
-                "aria-expanded",
-                "false"
-            );
 
-            menuToggle.setAttribute(
-                "aria-label",
-                "Abrir menú de navegación"
-            );
+    document.addEventListener("keydown", (event) => {
+
+        if (event.key === "Escape") {
+            closeMenu();
+        }
+
+    });
+
+
+    window.addEventListener("resize", () => {
+
+        if (window.innerWidth >= 900) {
+            closeMenu();
         }
 
     });
 
 }
-const budgetForm = document.querySelector("#budget-form");
+
+
+/* ==================================================
+   Budget form
+   ================================================== */
+
+const budgetForm =
+    document.querySelector("#budget-form");
+
 
 if (budgetForm) {
 
@@ -49,14 +88,28 @@ if (budgetForm) {
 
         event.preventDefault();
 
-        const formData = new FormData(budgetForm);
+        const formData =
+            new FormData(budgetForm);
 
-        const name = formData.get("name");
-        const business = formData.get("business");
-        const email = formData.get("email");
-        const projectType = formData.get("projectType");
-        const budget = formData.get("budget");
-        const message = formData.get("message");
+
+        const name =
+            formData.get("name")?.toString().trim() ?? "";
+
+        const business =
+            formData.get("business")?.toString().trim() ?? "";
+
+        const email =
+            formData.get("email")?.toString().trim() ?? "";
+
+        const projectType =
+            formData.get("projectType")?.toString().trim() ?? "";
+
+        const budget =
+            formData.get("budget")?.toString().trim() ?? "";
+
+        const message =
+            formData.get("message")?.toString().trim() ?? "";
+
 
         const whatsappMessage = `
 Hola MasseDev 👋
@@ -74,17 +127,42 @@ Descripción:
 ${message}
         `.trim();
 
-        const phoneNumber = "5493541571500";
+
+        const phoneNumber =
+            "5493541571500";
+
 
         const whatsappUrl =
             `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
-        window.open(
+
+        const newWindow = window.open(
             whatsappUrl,
             "_blank",
             "noopener,noreferrer"
         );
 
+
+        if (newWindow) {
+            newWindow.opener = null;
+        }
+
     });
+
+}
+
+
+/* ==================================================
+   Current year
+   ================================================== */
+
+const currentYear =
+    document.querySelector("#current-year");
+
+
+if (currentYear) {
+
+    currentYear.textContent =
+        new Date().getFullYear();
 
 }
